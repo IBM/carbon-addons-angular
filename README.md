@@ -33,6 +33,14 @@ There are several challenges associated with each approach presented:
 	- if a org specific component needs to publish a breaking change, what should they do?
 	- is there a specific timeline?
 	- is consensus needed?
+- how are issues handled?
+	- who should respond?
+	- how are they organized?
+- how are PRs handled?
+	- who needs to review for code to be safely merged?
+	- can GitHub CODEOWNERS help here?
+- how are new orgs and packages onboarded?
+- how are new CODEOWNERS added?
 
 Another option is to present the repo as a monorepo of related packages. This still achieves the goal of centralizing source changes, while also allowing teams the flexibility to publish breaking changes and other new versions as needed
 
@@ -63,6 +71,7 @@ There are still some challenges with this approach:
 	- can GitHub CODEOWNERS help here?
 - how are new orgs and packages onboarded?
 - how are new CODEOWNERS added?
+- how are old updates to old versions handled?
 
 ### Contributing
 
