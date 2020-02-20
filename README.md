@@ -28,6 +28,8 @@ There are several challenges associated with each approach presented:
 
 - what is the "base implementation"?
 	- who decides that?
+- is there a "base implementation" at all?
+	- Is that okay?
 - what is the process when there is no existing "base implementation"?
 - what is the process when one implementation should become the base?
 - how should changes and updates be shared?
@@ -35,6 +37,7 @@ There are several challenges associated with each approach presented:
 	- if a org specific component needs to publish a breaking change, what should they do?
 	- is there a specific timeline?
 	- is consensus needed?
+- how do updates to older major versions work?
 - how are issues handled?
 	- who should respond?
 	- how are they organized?
@@ -67,6 +70,10 @@ There are still some challenges with this approach:
 	- who decides that?
 - is there a "base implementation" at all?
 	- Is that okay?
+- what is the process when there is no existing "base implementation"?
+- what is the process when one implementation should become the base?
+- how should changes and updates be shared?
+- how do updates to older major versions work?
 - how are issues handled?
 	- who should respond?
 	- how are they organized?
