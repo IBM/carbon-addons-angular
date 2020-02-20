@@ -38,6 +38,7 @@ There are several challenges associated with each approach presented:
 	- is there a specific timeline?
 	- is consensus needed?
 - how do updates to older major versions work?
+	- we can likely use the same method as `carbon-components-angular`, since everything will share a major version
 - how are issues handled?
 	- who should respond?
 	- how are they organized?
@@ -74,6 +75,8 @@ There are still some challenges with this approach:
 - what is the process when one implementation should become the base?
 - how should changes and updates be shared?
 - how do updates to older major versions work?
+	- in a lerna managed repo with independent versioning it seems like there isn't a great way other than manually bumping
+	- a lerna repo with fixed versioning doesn't really seem to solve the core issue (allowing packages to be at different major and minor versions)
 - how are issues handled?
 	- who should respond?
 	- how are they organized?
