@@ -22,6 +22,8 @@ Largely TBD but in order to keep contributions sane there needs to be some logic
     |- cloud // cloud specific implementation
 ```
 
+This results in one package, with many entry points, and a lot of code that may not be needed by all consuming teams. There may also be some confusion around which components and modules are allowed to be used, since they're all available in one package. In some respects this is a positive, since it would encourage cross org code use, at the expense of potential incositencies.
+
 There are several challenges associated with each approach presented:
 
 - what is the "base implementation"?
@@ -56,6 +58,8 @@ Another option is to present the repo as a monorepo of related packages. This st
     |- src
 	  |- component // cloud specific implementation
 ```
+
+This results in multiple packages, but the consuming team will likely need to install two - `carbon-addons-angular` and `carbon-addons-[org name here]-angular`. Two dependencies instead of one, however this also reduces the amount of redundant code consumed, and potential confusion between different implementations (sterling teams should only use sterling or core, cloud teams should only use cloud or core). This does also increase the barriers to cross org code reuse, since a team would need to download another package, at the expense of stronger limits on which components can be used in the first place.
 
 There are still some challenges with this approach:
 
