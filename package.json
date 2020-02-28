@@ -1,16 +1,98 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "yarn lerna run build --stream --npm-client yarn",
-    "bump-version": "yarn lerna version --conventional-commits",
-    "release": "yarn lerna publish --conventional-commits"
-  },
-  "devDependencies": {
-    "lerna": "^3.20.2"
-  },
-  "version": "independent"
+	"name": "carbon-addons-angular",
+	"version": "0.0.0",
+	"description": "IBM Carbon Angular Addons",
+	"main": "index.js",
+	"scripts": {
+		"build": "npm run build:angular && npm run build:storybook",
+		"build:angular": "ng build",
+		"build:storybook": "build-storybook -c .storybook -s .storybook/public -o dist/docs/storybook",
+		"storybook": "start-storybook -s .storybook/public -p 7007",
+		"test": "ng test --no-watch",
+		"test:watch": "ng test --watch",
+		"lint": "ng lint",
+		"ng": "ng",
+		"semantic-release": "semantic-release",
+		"postinstall": "bash scripts/vendor.sh"
+	},
+	"author": "IBM",
+	"license": "SEE LICENSE IN LICENSE",
+	"release": {
+		"pkgRoot": "dist"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "bash scripts/prepush.sh",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"peerDependencies": {
+		"@angular/common": "^7.0.0 || ^8.0.0",
+		"@angular/core": "^7.0.0 || ^8.0.0",
+		"@angular/forms": "^7.0.0 || ^8.0.0",
+		"@angular/cdk": "^7.0.0 || ^8.0.0",
+		"rxjs": "^6.3.3",
+		"zone.js": "^0.8.26 || ^0.9.0",
+		"carbon-components": "^10.0.0",
+		"@carbon/icons-angular": "^10.1.0",
+		"carbon-components-angular": ">=3.30.1"
+	},
+	"devDependencies": {
+		"@angular-devkit/build-angular": "~0.13.0",
+		"@angular-devkit/build-ng-packagr": "~0.13.0",
+		"@angular-devkit/core": "^8.2.7",
+		"@angular/animations": "~7.2.0",
+		"@angular/cdk": "~7.2.0",
+		"@angular/cli": "~7.3.9",
+		"@angular/common": "~7.2.0",
+		"@angular/compiler": "~7.2.0",
+		"@angular/compiler-cli": "~7.2.0",
+		"@angular/core": "~7.2.0",
+		"@angular/forms": "~7.2.0",
+		"@angular/language-service": "~7.2.0",
+		"@angular/platform-browser": "~7.2.0",
+		"@angular/platform-browser-dynamic": "~7.2.0",
+		"@angular/router": "~7.2.0",
+		"@babel/core": "^7.6.0",
+		"@carbon/colors": "^10.5.0",
+		"@carbon/icons-angular": "10.4.0",
+		"@carbon/layout": "^10.5.0",
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
+		"@storybook/addon-actions": "5.1.8",
+		"@storybook/addon-knobs": "5.1.8",
+		"@storybook/addon-links": "5.1.8",
+		"@storybook/addon-notes": "5.1.8",
+		"@storybook/addon-options": "5.1.8",
+		"@storybook/addon-storysource": "5.1.8",
+		"@storybook/addons": "5.1.8",
+		"@storybook/angular": "5.1.8",
+		"@types/jasmine": "~2.8.8",
+		"@types/jasminewd2": "~2.0.3",
+		"@types/node": "^8.9.5",
+		"autoprefixer": "^8.1.0",
+		"babel-loader": "8.0.5",
+		"carbon-components": "^10.9.2",
+		"carbon-components-angular": "3.37.1",
+		"codelyzer": "~4.5.0",
+		"core-js": "^2.5.4",
+		"husky": "^4.2.3",
+		"jasmine-core": "~2.99.1",
+		"jasmine-spec-reporter": "~4.2.1",
+		"karma": "~4.0.0",
+		"karma-chrome-launcher": "~2.2.0",
+		"karma-coverage-istanbul-reporter": "~2.0.1",
+		"karma-jasmine": "~1.1.2",
+		"karma-jasmine-html-reporter": "^0.2.2",
+		"ng-packagr": "^4.2.0",
+		"protractor": "~5.4.0",
+		"rxjs": "~6.3.3",
+		"semantic-release": "^15.13.28",
+		"ts-node": "~7.0.0",
+		"tsickle": ">=0.34.0",
+		"tslib": "^1.9.0",
+		"tslint": "~5.20.1",
+		"typescript": "~3.2.2",
+		"zone.js": "~0.8.26"
+	}
 }

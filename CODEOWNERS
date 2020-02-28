@@ -1,0 +1,11 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @IBM/carbon-angular will be requested for
+# review when someone opens a pull request.
+# The last matching pattern takes the most precedence.
+* @IBM/carbon-angular
+
+# So in this case, @IBM/carbon-angular will be requested for
+# review on files under sterling/ directories. Global owners
+# will not be requested for review.
+sterling/ @IBM/carbon-angular

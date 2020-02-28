@@ -8,6 +8,10 @@ This repo represents a collection of useful components and patterns that aren't 
 
 Largely TBD but in order to keep contributions sane there needs to be some logical organization of the folders and prefixes used in the components. Not all components and patterns will be common to each org, and some components may be duplicated with changes. There are a few ways to account for this.
 
+food for thought:
+
+- is there a clear method that will encourage contributions? If so maybe we should go for that over a more complex approach
+
 ```
 |- src
   |- component // base implementation
