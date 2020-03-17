@@ -71,7 +71,7 @@
 		"@babel/core": "7.8.7",
 		"@carbon/colors": "10.8.0",
 		"@carbon/themes": "10.10.1",
-		"@carbon/icons-angular": "11.0.0",
+		"@carbon/icons-angular": "10.8.0",
 		"@carbon/layout": "10.8.1",
 		"@commitlint/cli": "8.3.5",
 		"@commitlint/config-conventional": "8.3.4",
