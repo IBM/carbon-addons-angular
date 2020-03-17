@@ -1,14 +1,14 @@
 import "./polyfills.js";
+import theme from './theme';
 
-import { configure, addDecorator } from "@storybook/angular";
-import { withOptions } from '@storybook/addon-options';
+import { configure } from "@storybook/angular";
+import { setOptions } from '@storybook/addon-options';
 
-addDecorator(
-	withOptions({
-		name: "Carbon Addons Angular",
-		url: "https://github.com/IBM/carbon-addons-angular",
-	})
-);
+setOptions({
+	name: "Carbon Addons Angular",
+	url: "https://github.com/IBM/carbon-addons-angular",
+	theme
+});
 
 // load global styles
 require("!style-loader!css-loader!postcss-loader!sass-loader!./preview.scss");
