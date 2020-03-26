@@ -1,27 +1,27 @@
 {
-  "_from": "@carbon/layout@^10.5.0",
-  "_id": "@carbon/layout@10.7.3",
+  "_from": "@carbon/layout@10.8.1",
+  "_id": "@carbon/layout@10.8.1",
   "_inBundle": false,
-  "_integrity": "sha512-immntPyUW4b20gyjLX6bYbwKeyjn93GIOTToauiVKBoFLZ7vjTz/QxIonsbYMdUt6AnI5/16tVphL2uxlD2KbA==",
+  "_integrity": "sha512-If1dzSJx/zAjCuEl6eD+7bj5dqy4dzH+QsEPwW07DnIQg3YBxxifEyZgaPGrDu5HJTL+R2A0YabGxo/DK1aqwQ==",
   "_location": "/@carbon/layout",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "@carbon/layout@^10.5.0",
+    "raw": "@carbon/layout@10.8.1",
     "name": "@carbon/layout",
     "escapedName": "@carbon%2flayout",
     "scope": "@carbon",
-    "rawSpec": "^10.5.0",
+    "rawSpec": "10.8.1",
     "saveSpec": null,
-    "fetchSpec": "^10.5.0"
+    "fetchSpec": "10.8.1"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/@carbon/layout/-/layout-10.7.3.tgz",
-  "_shasum": "eddb4aceae38ae0c3065c3485e2b01a1e1f683dc",
-  "_spec": "@carbon/layout@^10.5.0",
+  "_resolved": "https://registry.npmjs.org/@carbon/layout/-/layout-10.8.1.tgz",
+  "_shasum": "23cbfa331824e57a4dce8608a0ec1810832264a1",
+  "_spec": "@carbon/layout@10.8.1",
   "_where": "/Users/cal/Sites/carbon/carbon-addons-angular",
   "bugs": {
     "url": "https://github.com/carbon-design-system/carbon/issues"
@@ -30,10 +30,10 @@
   "deprecated": false,
   "description": "Layout helpers for digital and software products using the Carbon Design System",
   "devDependencies": {
-    "@carbon/bundler": "^10.5.2",
+    "@carbon/bundler": "^10.6.0",
     "@carbon/cli-reporter": "^10.3.0",
-    "@carbon/scss-generator": "^10.5.1",
-    "@carbon/test-utils": "^10.6.2",
+    "@carbon/scss-generator": "^10.6.0",
+    "@carbon/test-utils": "^10.7.0",
     "core-js": "^3.4.0",
     "rimraf": "^3.0.0"
   },
@@ -43,7 +43,7 @@
     "sassDir": "scss",
     "needs": "^1.3.0"
   },
-  "gitHead": "8fd6caf32cedbd0a5350b7d520742e09a0acf85e",
+  "gitHead": "7d43dabaf011f2bcc70798b96c30173f7fc54e44",
   "keywords": [
     "eyeglass-module",
     "ibm",
@@ -69,5 +69,5 @@
     "build": "yarn clean && bundler bundle src/index.js --name CarbonLayout && node tasks/build.js && bundler sassdoc \"scss/**/*.scss\"",
     "clean": "rimraf es lib umd scss/generated"
   },
-  "version": "10.7.3"
+  "version": "10.8.1"
 }
