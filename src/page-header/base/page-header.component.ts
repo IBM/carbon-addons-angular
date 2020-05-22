@@ -58,7 +58,7 @@ export const itemsWithTitle = (items: BreadcrumbItem[], title: string): Breadcru
 	selector: 'ibm-page-header',
 	template: `
 		<div class="ibm--page-header__container"
-			[class.sc--page-header__container--contained-width]="containedWidth">
+			[class.ibm--page-header__container--contained-width]="containedWidth">
 			<div class="ibm--page-header__main">
 				<ibm-breadcrumb
 					class="breadcrumbs"

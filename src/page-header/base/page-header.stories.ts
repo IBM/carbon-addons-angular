@@ -30,7 +30,7 @@ storiesOf('Base | Page header', module)
 			</ibm-page-header>
 		`,
 		props: {
-			containedWidth: boolean('containedWidth', true),
+			containedWidth: boolean('containedWidth', false),
 			title: text('title', 'Hello World'),
 			subTitle: text('subTitle', ''),
 			bgColor: color('bgColor', '')
@@ -48,7 +48,7 @@ storiesOf('Base | Page header', module)
 		`,
 		props: {
 			numberOfItems: number('numberOfItems', 3),
-			containedWidth: boolean('containedWidth', true),
+			containedWidth: boolean('containedWidth', false),
 			title: text('title', 'Hello World'),
 			subTitle: text('subTitle', 'This is a subtitle'),
 			bgColor: color('bgColor', ''),
@@ -73,7 +73,7 @@ storiesOf('Base | Page header', module)
 		`,
 		props: {
 			numberOfItems: number('numberOfItems', 3),
-			containedWidth: boolean('containedWidth', true),
+			containedWidth: boolean('containedWidth', false),
 			title: text('title', 'Hello World'),
 			subTitle: text('subTitle', 'This is a subtitle'),
 			bgColor: color('bgColor', ''),
@@ -101,7 +101,7 @@ storiesOf('Base | Page header', module)
 		`,
 		props: {
 			numberOfItems: number('numberOfItems', 3),
-			containedWidth: boolean('containedWidth', true),
+			containedWidth: boolean('containedWidth', false),
 			title: text('title', 'Hello World'),
 			subTitle: text('subTitle', 'This is a subtitle'),
 			numberOfTags: number('numberOfTags', 1),
