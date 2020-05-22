@@ -5,6 +5,6 @@ export * from './table/index';
 
 // Org specific components
 export {
-  PageHeaderComponent as SterlingPageHeaderComponent,
-  PageHeaderModule as SterlingPageHeaderModule
+	PageHeaderComponent as SterlingPageHeaderComponent,
+	PageHeaderModule as SterlingPageHeaderModule
 } from './sterling/index';
