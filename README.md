@@ -26,12 +26,12 @@ food for thought:
     |- cloud // cloud specific implementation
 ```
 
-This results in one package, with many entry points, and a lot of code that may not be needed by all consuming teams. There may also be some confusion around which components and modules are allowed to be used, since they're all available in one package. In some respects this is a positive, since it would encourage cross org code use, at the expense of potential incositencies.
+This results in one package, with many entry points, and a lot of code that may not be needed by all consuming teams. There may also be some confusion around which components and modules are allowed to be used, since they're all available in one package. In some respects this is a positive, since it would encourage cross org code use, at the expense of potential inconsistencies.
 
 There are several challenges associated with each approach presented:
 
 - what is the "base implementation"?
-	- who decides that?
+	- who decides that? - we base off of carbon guidelines
 - is there a "base implementation" at all?
 	- Is that okay?
 - what is the process when there is no existing "base implementation"?

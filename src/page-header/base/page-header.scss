@@ -1,0 +1,104 @@
+@import "../../vendor/@carbon/layout/scss/index";
+@import "../../vendor/@carbon/colors/scss/index";
+
+$prefix: 'ibm';
+
+#{$prefix}-page-header {
+	display: block;
+	padding: carbon--mini-units(4);
+	background: $carbon--gray-10;
+
+	@include carbon--breakpoint(max) {
+		padding: carbon--mini-units(4) carbon--mini-units(5);
+  }
+  
+  &.has-breadcrumbs {
+    padding-top: carbon--mini-units(2);
+    
+    .#{$prefix}--page-header__actions {
+      padding-top: carbon--mini-units(2);
+    }
+  }
+
+  &.has-sub-title {
+    padding-bottom: carbon--mini-units(2);
+
+    .#{$prefix}--page-header__actions {
+      padding-bottom: carbon--mini-units(2);
+    }
+  }
+
+  &.has-dark-theme {
+    color: $carbon--gray-10;
+  }
+
+  // Don't stack breadcrumbs as it makes the header extremely long - todo discuss with carbon team
+  ibm-breadcrumb .bx--breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.#{$prefix}--page-header__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.#{$prefix}--page-header__container--contained-width {
+    max-width: 99rem;
+  }
+}
+
+.#{$prefix}--page-header__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+.#{$prefix}--page-header__actions {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+  > * {
+    margin-left: 1rem;
+  }
+}
+
+.#{$prefix}--page-header__title-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.#{$prefix}--page-header__title {
+	font-size: 1.5rem;
+  line-height: 1em;
+  padding: 0.25rem carbon--mini-units(1) 0.25rem 0;
+  display: inline-block;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @include carbon--breakpoint(md) {
+    font-size: 1.75rem;
+  }
+}
+
+.#{$prefix}--page-header__details {
+  display: inline-block;
+}
+
+.#{$prefix}--page-header__sub-title {
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+
+.#{$prefix}--page-header__secondary-content {
+  padding-top: carbon--mini-units(4);
+}

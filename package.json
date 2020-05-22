@@ -109,5 +109,8 @@
 		"tslint": "5.15.0",
 		"typescript": "3.2.2",
 		"zone.js": "0.8.26"
+	},
+	"dependencies": {
+		"get-contrast": "^2.0.0"
 	}
 }

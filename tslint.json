@@ -130,7 +130,8 @@
 			[
 				"sc",
 				"app",
-				"test"
+				"test",
+				"ibm"
 			],
 			"camelCase"
 		],
@@ -140,7 +141,8 @@
 			[
 				"sc",
 				"app",
-				"test"
+				"test",
+				"ibm"
 			],
 			"kebab-case"
 		],
