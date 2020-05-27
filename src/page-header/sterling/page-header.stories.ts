@@ -2,7 +2,7 @@ import { number, withKnobs } from '@storybook/addon-knobs';
 import { moduleMetadata, storiesOf } from '@storybook/angular';
 import { BreadcrumbItem } from 'carbon-components-angular';
 import { itemsWithTitle } from './page-header.component';
-import { PageHeaderModule } from './page-header.module';
+import { SterlingPageHeaderModule } from './page-header.module';
 
 const createBreadcrumbItems = (count: number, content = 'Breadcrumb'): BreadcrumbItem[] =>
 	// fill(0) so we have something useful to map over
@@ -13,7 +13,7 @@ const createBreadcrumbItems = (count: number, content = 'Breadcrumb'): Breadcrum
 
 storiesOf('Sterling | Page header', module)
 	.addDecorator(moduleMetadata({
-		imports: [ PageHeaderModule ]
+		imports: [ SterlingPageHeaderModule ]
 	}))
 	.addDecorator(withKnobs)
 	.add('Basic', () => ({

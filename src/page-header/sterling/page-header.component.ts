@@ -65,7 +65,7 @@ export const itemsWithTitle = (items: BreadcrumbItem[], title: string): Breadcru
 	`,
 	styleUrls: ['./page-header.scss']
 })
-export class PageHeaderComponent {
+export class SterlingPageHeaderComponent {
 	/**
 	 * Items to display in the header. The last item is used as the title
 	 */
