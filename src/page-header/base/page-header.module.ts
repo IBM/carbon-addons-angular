@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 
 import { BreadcrumbModule } from 'carbon-components-angular';
 
-import { SterlingPageHeaderComponent } from './page-header.component';
+import { PageHeaderComponent } from './page-header.component';
 
 @NgModule({
 	declarations: [
-		SterlingPageHeaderComponent
+		PageHeaderComponent
 	],
 	imports: [
 		BreadcrumbModule
 	],
 	exports: [
-		SterlingPageHeaderComponent
+		PageHeaderComponent
 	]
 })
-export class SterlingPageHeaderModule {}
+export class PageHeaderModule {}
