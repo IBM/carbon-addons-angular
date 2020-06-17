@@ -113,4 +113,24 @@ storiesOf('Base | Page header', module)
 				return createTags(this.numberOfTags);
 			}
 		}
+	}))
+	.add('With Secondary Title Content', () => ({
+		template: `
+			<ibm-page-header
+				[containedWidth]="containedWidth"
+				[title]="title"
+				[subTitle]="subTitle"
+				[bgColor]="bgColor">
+				<ng-container title>
+					{{ titleContent }}
+				</ng-container>
+			</ibm-page-header>
+		`,
+		props: {
+			containedWidth: boolean('containedWidth', false),
+			title: text('title', 'Hello World'),
+			subTitle: text('subTitle', ''),
+			bgColor: color('bgColor', ''),
+			titleContent: text('titleContent', '2')
+		}
 	}));
