@@ -1,5 +1,3 @@
-import * as contrast from 'get-contrast';
-import { BreadcrumbItem } from 'carbon-components-angular';
 import {
 	Component,
 	EventEmitter,
@@ -8,6 +6,8 @@ import {
 	Output,
 	ViewEncapsulation
 } from '@angular/core';
+import { BreadcrumbItem } from 'carbon-components-angular';
+import * as contrast from 'get-contrast';
 
 /**
  * Adds an item to the end of a `BreadcrumbItem` list to serve as a title for the page header component
