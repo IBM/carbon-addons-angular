@@ -67,7 +67,8 @@ export const itemsWithTitle = (items: BreadcrumbItem[], title: string): Breadcru
 					(navigation)="navigation.emit($event)">
 				</ibm-breadcrumb>
 				<div class="ibm--page-header__title-container">
-					<h1 class="ibm--page-header__title" [attr.title]="title">
+					<h1 class="ibm--page-header__title"
+						[attr.title]="title">
 						{{ title }}
 						<ng-content select="[title]"></ng-content>
 					</h1>
