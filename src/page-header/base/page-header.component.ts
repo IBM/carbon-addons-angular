@@ -64,6 +64,7 @@ export const itemsWithTitle = (items: BreadcrumbItem[], title: string): Breadcru
 					class="breadcrumbs"
 					[ariaLabel]="ariaLabel"
 					[items]="items"
+					[noTrailingSlash]="noTrailingSlash"
 					(navigation)="navigation.emit($event)">
 				</ibm-breadcrumb>
 				<div class="ibm--page-header__title-container">
@@ -124,6 +125,11 @@ export class PageHeaderComponent {
 	 * Custom bg color
 	 */
 	@Input() bgColor: string;
+
+	/**
+	 * Trailing Slash
+	 */
+	@Input() noTrailingSlash = false;
 
 	/**
 	 * Emits the navigation status promise when the link is activated
