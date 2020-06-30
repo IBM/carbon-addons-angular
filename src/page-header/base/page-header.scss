@@ -61,6 +61,7 @@ $prefix: 'ibm';
   display: flex;
   justify-content: center;
   max-width: 100%;
+  align-items: baseline;
 
   > * {
     margin-left: 1rem;
