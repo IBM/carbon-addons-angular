@@ -45,7 +45,11 @@ $prefix: 'ibm';
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 carbon--mini-units(4);
+  padding: 0 carbon--mini-units(2);
+
+  @include carbon--breakpoint(md) {
+    padding: 0 carbon--mini-units(4);
+  }
 
   @include carbon--breakpoint(max) {
     padding: 0 carbon--mini-units(5);
