@@ -124,13 +124,17 @@ storiesOf('Base | Page header', module)
 				<ng-container title>
 					{{ titleContent }}
 				</ng-container>
+				<ng-container sub-title>
+					{{ subTitleContent }}
+				</ng-container>
 			</ibm-page-header>
 		`,
 		props: {
 			containedWidth: boolean('containedWidth', false),
 			title: text('title', 'Hello World'),
-			subTitle: text('subTitle', ''),
+			subTitle: text('subTitle', ' '),
 			bgColor: color('bgColor', ''),
-			titleContent: text('titleContent', '2')
+			titleContent: text('titleContent', '2'),
+			subTitleContent: text('subTitleContent', '2')
 		}
 	}));
