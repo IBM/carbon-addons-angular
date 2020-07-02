@@ -5,11 +5,11 @@ $prefix: 'ibm';
 
 #{$prefix}-page-header {
 	display: block;
-	padding: carbon--mini-units(4);
+	padding: carbon--mini-units(4) 0;
 	background: $carbon--gray-10;
 
 	@include carbon--breakpoint(max) {
-		padding: carbon--mini-units(4) carbon--mini-units(5);
+		padding: carbon--mini-units(4) 0;
   }
   
   &.has-breadcrumbs {
@@ -45,6 +45,15 @@ $prefix: 'ibm';
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 carbon--mini-units(2);
+
+  @include carbon--breakpoint(md) {
+    padding: 0 carbon--mini-units(4);
+  }
+
+  @include carbon--breakpoint(max) {
+    padding: 0 carbon--mini-units(5);
+  }
 
   &.#{$prefix}--page-header__container--contained-width {
     max-width: 99rem;
@@ -85,6 +94,7 @@ $prefix: 'ibm';
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin: 0;
 
   @include carbon--breakpoint(md) {
     font-size: 1.75rem;
