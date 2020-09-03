@@ -61,7 +61,7 @@ export const itemsWithTitle = (items: BreadcrumbItem[], title: string): Breadcru
 			[class.ibm--page-header__container--contained-width]="containedWidth">
 			<div class="ibm--page-header__main">
 				<ibm-breadcrumb 
-					*ngIf="items.length > 0"
+					*ngIf="items.length"
 					class="breadcrumbs"
 					[ariaLabel]="ariaLabel"
 					[items]="items"
