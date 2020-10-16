@@ -151,8 +151,8 @@ export class PageHeaderComponent {
 
 		const lightText = '#f4f4f4';
 		const darkText = '#161616';
-		const lightRatio = contrast.ratio(this.bgColor, lightText);
-		const darkRatio = contrast.ratio(this.bgColor, darkText);
+		const lightRatio = contrast.ratio(this.bgColor.toLowerCase(), lightText);
+		const darkRatio = contrast.ratio(this.bgColor.toLowerCase(), darkText);
 		this.darkTheme = lightRatio >= darkRatio ? true : false;
 
 		return this.darkTheme;
