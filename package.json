@@ -69,6 +69,7 @@
 		"@angular/platform-browser-dynamic": "7.2.16",
 		"@angular/router": "7.2.16",
 		"@babel/core": "7.8.7",
+		"@babel/compat-data": "^7.9.0",
 		"@carbon/colors": "10.8.0",
 		"@carbon/themes": "10.10.1",
 		"@carbon/icons-angular": "10.8.0",
