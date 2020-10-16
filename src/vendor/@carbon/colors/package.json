@@ -1,11 +1,4 @@
 {
-  "_args": [
-    [
-      "@carbon/colors@10.8.0",
-      "/Users/dusan.milko/Projects/dm/carbon-addons-angular"
-    ]
-  ],
-  "_development": true,
   "_from": "@carbon/colors@10.8.0",
   "_id": "@carbon/colors@10.8.0",
   "_inBundle": false,
@@ -24,15 +17,17 @@
     "fetchSpec": "10.8.0"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "/@carbon/themes"
+    "#DEV:/"
   ],
   "_resolved": "https://registry.npmjs.org/@carbon/colors/-/colors-10.8.0.tgz",
-  "_spec": "10.8.0",
-  "_where": "/Users/dusan.milko/Projects/dm/carbon-addons-angular",
+  "_shasum": "bdd6f30c052e86c7de20522a2a2b58062fcdb9dd",
+  "_spec": "@carbon/colors@10.8.0",
+  "_where": "/Users/cal/Sites/carbon/carbon-addons-angular",
   "bugs": {
     "url": "https://github.com/carbon-design-system/carbon/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Colors for digital and software products using the Carbon Design System",
   "devDependencies": {
     "@carbon/bundler": "^10.6.0",
